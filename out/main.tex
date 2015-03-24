@@ -1,0 +1,58 @@
+\documentclass[a4paper]{article}
+
+\title{396 two part exercises}
+
+\author{James Greenwood}
+
+\usepackage{graphics}
+\begin{document}
+
+\section{C Major}
+
+{%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{df/lily-73bc7853-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+
+Options are put in brackets.
+
+\begin{quote}
+\noindent
+\begin{verbatim}
+  c'4 f16
+\end{verbatim}
+{%
+\parindent 0pt
+\noindent
+\ifx\preLilyPondExample \undefined
+\else
+  \expandafter\preLilyPondExample
+\fi
+\def\lilypondbook{}%
+\input{4a/lily-302d4edc-systems.tex}
+\ifx\postLilyPondExample \undefined
+\else
+  \expandafter\postLilyPondExample
+\fi
+}
+\end{quote}
+
+Larger examples can be put into a separate file, and introduced with
+\verb+\lilypondfile+.
+
+%\lilypondfile[quote,noindent]{screech-and-boink.ly}
+
+(If needed, replace @file{screech-and-boink.ly} by any @file{.ly} file
+you put in the same directory as this file.)
+
+\end{document}

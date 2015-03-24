@@ -1,0 +1,33 @@
+\documentclass[a4paper]{article}
+
+\title{396 two part exercises}
+
+\author{James Greenwood}
+
+\begin{document}
+
+\section{C Major}
+
+\begin{lilypond}
+<< 
+\new Staff
+\relative c' {
+c1 d e f g a b c
+} >>
+\end{lilypond}
+
+Options are put in brackets.
+
+\begin{lilypond}[fragment,quote,staffsize=26,verbatim]
+  c'4 f16
+\end{lilypond}
+
+Larger examples can be put into a separate file, and introduced with
+\verb+\lilypondfile+.
+
+%\lilypondfile[quote,noindent]{screech-and-boink.ly}
+
+(If needed, replace @file{screech-and-boink.ly} by any @file{.ly} file
+you put in the same directory as this file.)
+
+\end{document}
