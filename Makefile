@@ -8,7 +8,6 @@ LILYBOOK_PDF=lilypond-book --output=$(OUTDIR) --pdf $(FILE).lytex
 LILYBOOK_HTML=lilypond-book --output=$(WEBDIR) $(FILE).lytex
 PDF=cd $(OUTDIR) && pdflatex $(FILE)
 HTML=cd $(WEBDIR) && latex2html $(FILE)
-INDEX=cd $(OUTDIR) && makeindex $(FILE)
 PREVIEW=$(VIEWER) $(OUTDIR)/$(FILE).pdf &
 
 all: pdf web keep
@@ -16,7 +15,6 @@ all: pdf web keep
 pdf:
 	$(LILYBOOK_PDF)  # begin with tab
 	$(PDF)           # begin with tab
-	$(INDEX)         # begin with tab
 	$(PDF)           # begin with tab
 	$(PREVIEW)       # begin with tab
 
