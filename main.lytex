@@ -1,5 +1,5 @@
 \documentclass[a4paper]{article}
-\usepackage{fullpage}
+\usepackage[cm]{fullpage}
 
 \title{396 two part exercises}
 
@@ -102,6 +102,72 @@ c4 b a g f e f d c d e g a g a f e d e g f e f a g f e d c1
 }}>>
 
 \end{lilypond}
+
+
+\subsection{No. 7.}
+
+\begin{lilypond}
+<< 
+\new Staff {
+\relative c' {
+c1 d e f g a b c \bar "||"
+}}
+\new Staff { 
+\relative c' {
+c4 e g c b c b a g f e c d c d f e d e g f d e f g f e d c1
+}}>>
+
+\end{lilypond}
+
+
+
+\subsection{No. 8.}
+
+\begin{lilypond}
+<< 
+\new Staff {
+\relative c' {
+c1 d e f g a b c \bar "||"
+}}
+\new Staff { 
+\relative c'' {
+c4 b c a b c b a g a b c a g a f e f g e f a f e d c d g c,1
+}}>>
+
+\end{lilypond}
+
+
+\subsection{No. 9.}
+
+\begin{lilypond}
+<< 
+\new Staff {
+\relative c' {
+c1 d e f g a b c \bar "||"
+}}
+\new Staff { 
+\relative c'' {
+r4 c d c b c b a g f e c d e f d e f g e f g f e d e f d e1
+}}>>
+
+\end{lilypond}
+
+
+\subsection{No. 10.}
+
+\begin{lilypond}
+<< 
+\new Staff {
+\relative c'' {
+c1 b a g f e d c \bar "||"
+}}
+\new Staff { 
+\relative c' {
+c4 d e f g a b d c b c d e d c b a g a b c b a g f g a b c1
+}}>>
+
+\end{lilypond}
+
 
 
 \end{document}
