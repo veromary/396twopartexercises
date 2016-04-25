@@ -1,5 +1,12 @@
 \documentclass[a4paper]{article}
 \usepackage[cm]{fullpage}
+\usepackage{titlesec}
+
+\setcounter{tocdepth}{1}
+\renewcommand\thesection{}
+\renewcommand\thesubsection{}
+\titleformat{\section}{\normalfont\Huge\scshape\center}{}{1em}{}
+
 
 \title{396 two part exercises}
 
@@ -8,166 +15,10505 @@
 \begin{document}
 
 \maketitle
+\tableofcontents
 
-\section{C Major}
+\section{C Major.}
 
+%Page 1
 \subsection{No. 1.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c' {
-c1 d e f g a b c \bar "||"
-}}
-\new Staff { 
-\relative c'' {
-c4 b a g f g a b c d c b a b c d e f e d c b a g f e f d c1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 b a g f g a b c d c b a b c d e f e d c b a g f e f d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
 
 \subsection{No. 2.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c' {
-c1 d e f g a b c \bar "||"
-}}
-\new Staff { 
-\relative c'' {
-r4 c d c b c b a g a b c d e d c b c d e f e d c b a g f e1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 c d c b c b a g a b c d e d c b c d e f e d c b a g f e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
 
 \subsection{No. 3.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c' {
-c1 d e f g a b c \bar "||"
-}}
-\new Staff { 
-\relative c' {
-r4 c d e f g a b c b a g a b c d e d c b a g f e d e f d c1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c d e f g a b c b a g a b c d e d c b a g f e d e f d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
 
 \subsection{No. 4.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c' {
-c1 d e f g a b c \bar "||"
-}}
-\new Staff { 
-\relative c'' {
-c4 d e c b c b a g a b c a b c d b c d e c d e f d e f d c1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 d e c b c b a g a b c a b c d b c d e c d e f d e f d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
 
+
+%Page 2
 \subsection{No. 5.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c' {
-c1 d e f g a b c \bar "||"
-}}
-\new Staff { 
-\relative c'' {
-r4 c e c r b d b r c e c d c b a g f e g r f a f g a g f e1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 c e c r b d b r c e c d c b a g f e g r f a f g a g f e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
-
-
 
 \subsection{No. 6.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c' {
-c1 d e f g a b c \bar "||"
-}}
-\new Staff { 
-\relative c'' {
-c4 b a g f e f d c d e g a g a f e d e g f e f a g f e d c1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 b a g f e f d c d e g a g a f e d e g f e f a g f e d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
-
 
 \subsection{No. 7.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c' {
-c1 d e f g a b c \bar "||"
-}}
-\new Staff { 
-\relative c' {
-c4 e g c b c b a g f e c d c d f e d e g f d e f g f e d c1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 e g c b c b a g f e c d c d f e d e g f d e f g f e d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
-
-
 
 \subsection{No. 8.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c' {
-c1 d e f g a b c \bar "||"
-}}
-\new Staff { 
-\relative c'' {
-c4 b c a b c b a g a b c a g a f e f g e f a f e d c d g c,1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 b c a b c b a g a b c a g a f e f g e f a f e d c d g c,1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
-
 
 \subsection{No. 9.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c' {
-c1 d e f g a b c \bar "||"
-}}
-\new Staff { 
-\relative c'' {
-r4 c d c b c b a g f e c d e f d e f g e f g f e d e f d e1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 c d c b c b a g f e c d e f d e f g e f g f e d e f d e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
-
 
 \subsection{No. 10.}
 
 \begin{lilypond}
-<< 
-\new Staff {
-\relative c'' {
-c1 b a g f e d c \bar "||"
-}}
-\new Staff { 
-\relative c' {
-c4 d e f g a b d c b c d e d c b a g a b c b a g f g a b c1
-}}>>
-
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 d e f g a b d c b c d e d c b a g a b c b a g f g a b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
 \end{lilypond}
 
 
+%Page 3
+\subsection{No. 11.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 d e c d c b d c b a c b a b c d e f d c b c g f e f d e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 12.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c e c d e f g a b c d e d c b a g a b c d e c b a g f e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 13.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 d e c g' a b g c b c a b c d e d c b a g f e g f g a b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 14.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 d e c d c d e f e d c b a b c d c b d c g e c f e f d e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 15.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        c2. b a2 g4 f2. e2 d4 c2. d2 e4 f2 g4 a2. b2 c4 b2 a4 g2 f4 e2 d4 c2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c2. d2 e4 f2 g4 a2 b4 c2 b4 a2 g4 f2 e4 d2. c d2 c4 d2. e2 f4 g a b c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 4
+\subsection{No. 16.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c' {
+        c2. d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 e c b a b c b c a d c b a g f g a g f d e2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 17.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c' {
+        c2. d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 d e f g a g c b a g a b a b c b c d e d c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 18.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 c b b a a g g f f e e d d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 d e d c d e f g a b c d c b d c d c b c b a c b a g a b a b c d c d e d c b a g f e f g f e g f g f e f g a b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 19.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 b a g f e f d c d e g a g a f e d e g f e f a g f e d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 20.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 d e f g a b d c b c d e d c b a g a b c b a g f g a b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 5
+\subsection{No. 21.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        r2 c b a g c, a' f e g f e d e4 d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 22.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        r2 c d e f a b c d c4 b c2 g f4 g a b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 23.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 c e c b2 d r4 c g c a2 f r4 e g e f2 a g4 f8 e d4 e c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 24.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c e c d2 g r4 f a c b2 g r4 a d b c2 g f4 g a b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 25.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 d e c b c b a g f e c d e f d e f g e f g a f g f e d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 26.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 d e f g a b g c b c a b a b c d c d b c b c g f g a b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 6
+\subsection{No. 27.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        r2 c b d c b a f e g f e d f e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 28.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        r2 c d e f a b c d b c e f d e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 29.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 c8 [b] c [d] e [c] b [c] d [c] b4 a g c8 b c4 g a8 [g] f [e] d4 f e g8 f e4 c f8 [g] f [e] f [d] e [f] g4 f e d c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 30.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 e8 d e4 c g' a b g c8 [d] c [b] c4 d e d8 c b4 g a a8 g a4 b c b8 [a] g4 e f8 [e] f [g] a4 b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 7
+\subsection{No. 31.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        c4 c c b a b c g c a g a b a b c b c d c d c2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c2. d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 32.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        c4 c c d c d c b c b a b a g a g f g f e f e2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c2. b a g f e d c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 33.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        r2 c ~ c b4 a g2 c4 e e2 d4 c b2 e4 d c2 a g4 f e d c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 34.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c8 d e4 c d c d e f g a c b2 e ~ e d ~ d4 g, c2 c b c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 35.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        c4 g c b2 r4 c g c a2 r4 b d g, c2 f4 d2 d4 c2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c2. d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 36.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        c2. b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c8 d e4 f g2. f8 g a4 d b2. a8 [g] a [b] c [d] e [c] g4 e f8 g a4 b c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 8
+\subsection{No. 37.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        c4 c8 [d] e [c] b4 c d c b c d a r4 b g8 [a] b [g] c4 a c d c d c2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c2. d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 38.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        c2. b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 e c g'8 a g4 b c a f f e8 d e4 e d8 c d4 d c c c b8 a b4 c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 39.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 c c ~ c b8 a b4 c g c a f d e c8 [d] e [g] g4 f e d e d c2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c2. d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 40.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 c c d8 c d4 b c8 b c4 a b2 g4 a d d d g, c c b8 a b4 c2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c2. b a g f e d c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 41.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key c \major
+      \relative c' {
+        e2 g c b d b c g c a1 d2 b g b c a f' d c d c1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1. d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 9
+\subsection{No. 42.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key c \major
+      \relative c'' {
+        c2 e e e d d d c c c b b b a a g c c c b4 a b2 c1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1. b a g f e d c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 43.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key c \major
+      \relative c'' {
+        r2 c c c b r r c e e d r r b e c a c d e d c1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1. d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 44.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key c \major
+      \relative c'' {
+        c1. b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        r2 c e g1 g2 g f f f e e e d d e c c' b a b c1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 10
+\subsection{No. 45.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 c d d e e f f g g a a b b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 b a b c b a g f e f g f g a b c b c d c b c b a g f g a b c a b a g f e d e g f g a g f g f e d e d c d2 d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 46.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 e g c b2 a g4 a b c a2 d b4 a b g c2 a g4 f e d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 47.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c c' c, d e f g a b c d e2 e, f4 g a b c2 g4 c c2 b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 48.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        r2 c ~ c4 b8 a b4 d ~ d c8 b c4 g a b8 c d4 c b2 g ~ g4 f8 e f4 a ~ a g8 f e4 d c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 49.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c e c d2 g ~ g4 f8 e f4 a b2 e ~ e4 a, d2 ~ d4 g, c2 ~ c4 b8 a b4 b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 11
+\subsection{No. 50.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c' {
+        c2. d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 c8 [b] a [g] f4 e d c c' b a d c b a g c b a g8 f e4 d c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 51.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        c2. b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c8 [d] e [f] g4 a b c a c b2 c4 d8 e f4 d c8 d e4 c c b8 a b4 c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 52.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key c \major
+      \relative c' {
+        c1. d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        r2 c c c b a g f e d1 f2 e d e f a a g4 f e2 d c1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 53.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key c \major
+      \relative c'' {
+        c1. b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        r2 c e g a b c b a b1 c2 d c b c g c b a b c1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 54.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key c \major
+      \relative c' {
+        c4. d e f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        r8 c \noBeam c' b a b c g c a g f e4 g8 f a f g16 [f] e8 [d] c4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 55.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key c \major
+      \relative c'' {
+        c4. b a g f e d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        r8 c16 d e f g8 a b c16 [b] c8 [d] e4 e,8 f16 [g] a8 [b] c d e f a, b c4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 12
+\subsection{No. 56.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        c4. ~ c d ~ d e ~ e f ~ f g ~ g a ~ a b ~ b c4. r4 r8 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        c8 c' b a4 g8 f4 g8 a4 b8 c8 e d c4 b8 a4. d4 c8 b4 a8 b4 e8 c4 b8 c4 a8 g8 f e d e d c4. r4 r8
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 57.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        c4. ~ c b ~ b a ~ a g ~ g f ~ f e ~ e d ~ d c r4 r8 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r8 c d e4 f8 g4. g g8 f e f4 f8 f e d e4 e8 e4. d4 d8 d c b c4 c'8 c b a b4 b8 c4. r4 r8
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 58.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c4 e g c b c b a g c b c a d c d b a b g c b c e d e f d e1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 59.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 c e c d c d e f e d c b a b c d e f d c b c g f g a b c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 13
+\subsection{No. 60.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        r2 c b a g c a d b e c f d e4 d c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 61.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c e f g a b g c b c d e d c b a g a b c g c c c2 b c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 62.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        c4 e c b d b c g c a d c b e d c f e d e d c2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c2. d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 63.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        c8 d e4 c b8 c d4 b c8 b c4 g a8 g a4 f e8 d e4 g f8 e f4 a g8 f e4 d c2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c2. d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 64.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \major
+      \relative c'' {
+        e8 d c4 e d8 c b4 d c8 b a4 c b8 a b4 c d8 c d4 b c8 b c4 g f8 g a4 b c2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c2. b a g f e d c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 65.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        r2 c b d c b a f e g f e d d c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c1 d e f g a b c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+% Page 14
+\subsection{No. 66.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c' {
+        r2 c d e f a b g a b c g f d e1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c1 b a g f e d c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 67.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c d e c b c d b c b c g a g a d b a b e c b c f d b g f e1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c' {
+        c2 c4 c d2 d4 d e2 e4 e f2 f4 f g2 g4 g a2 a4 a b2 b4 b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 68.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c2 c4 c b2 b4 b a2 a4 a g2 g4 g f2 f4 f e2 e4 e d2 d4 d c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \major
+      \relative c'' {
+        c4 d e c d c b d c b a c b a g b a g f a g f e g f e d f e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{A Minor.}
+\subsection{No. 69.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \minor
+      \relative c' {
+        a1 b c d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        r2 a a gis a c b a gis e e d4 c b2 c4 b a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 70.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        a1 g f e d c b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        r2 a b c d a4 b c2 g4 a b2 a4 gis a e a2 a gis a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 15
+\subsection{No. 71.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key a \minor
+      \relative c' {
+        a2. b c d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        a4 c a gis b gis a b c b d b c e e e d c b2 b4 a2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 72.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key a \minor
+      \relative c'' {
+        a2. g f e d c b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a8 b c d e4 b c d8 c b4 a a gis e fis8 e fis4 gis a8 b c4 a a gis8 fis gis4 a2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 73.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key a \minor
+      \relative c' {
+        a1. b c d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        r2 a a a gis r a c c c b a gis e' e d4 e d2 c b c b a1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 74.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key a \minor
+      \relative c'' {
+        a1. g f e d c b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        r2 a c b4 c d2 e f f,4 g a b c2 c, e fis1 gis2 a e'4 d c a a1 gis2 a1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 75.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key a \minor
+      \relative c' {
+        a2. b c d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        a4 c a a gis8 fis gis4 a b c c b a gis e' e e d8 [c] b [a] b2 b4 a2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 76.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key a \minor
+      \relative c'' {
+        a2. g f e d c b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        a4 b c c b8 [a] b [c] d [c] b [a] b [d] d4 c g f8 [e] f [g] a [b] c4 b a a gis8 fis gis4 a2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 16
+\subsection{No. 77.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \minor
+      \relative c' {
+        a1 b c d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        a4 b c a a4 gis8 fis gis4 b b4 a8 gis a4 c c4 b8 a b4 d d4 c8 b c4 b a gis a d b b e8 d c b a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 78.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        a1 g f e d c b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a8 b c4 a b a b g a a8 g a4 b c g c c ~ c b8 a gis4 b a b c a a2 gis a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 79.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key a \minor
+      \relative c' {
+        a4. a b b c c d d e e fis fis gis gis a ~ a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c'' {
+        r8 a b c b a gis4. b r8 a b c b a b4. d c4 d8 e c b a4. a b4 e8 d c b a4. ~ a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 80.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key a \minor
+      \relative c'' {
+        a4. a g g f f e e d d c c b b a ~ a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \minor
+      \relative c' {
+        r8 a b c4 d8 e4. g a4 g8 a4 b8 c4. b4 a8 gis4 e8 fis4 gis8 a4. e4 a8 a4. gis8 fis gis a4. ~ a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 17
+
+\section{F Major.}
+\subsection{No. 81.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f1 g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        r2 f f4 e d e f2 a a2 g4 bes a4 g a c bes4 a bes d c bes a g f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 82.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f1 e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f4 g a f g f g a bes a bes g a g f a a2 g g f f e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 83.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f1 g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f a f e d e g g f e f g a bes g a g a c c2 bes4 a g2 a4 g f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 84.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f1 e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f4 g a bes c bes c a bes a g f e d e c d c d e f g a f f2 e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 85.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f1 g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f4 g a f e f g e f e f a g f g bes a g a c bes a bes d c d c bes a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 18
+\subsection{No. 86.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f1 e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f4 g a bes c bes a c bes a g bes a g a f g a bes d c bes a c bes a g bes a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 87.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f1 g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f a f f2 e4 g g2 f4 a a2 g4 bes bes2 a4 c c2 bes4 d d c8 bes a4 g f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 88.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f1 e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f a f g g8 f g4 a bes bes8 a bes4 bes bes2 a4 c d e f d c bes a f f e8 d e4 e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 89.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f1 g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 f8 e d4 c bes2 r4 g c2 a4 f g2 bes a c c4 bes d bes g2 c f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 90.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f1 e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        r2 f g4 f g a bes2. bes4 a bes c a a2 g g4 f c' f f2 e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 91.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f1 g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 f f, f' f2 e4 d c2 a4 f g2 g4 f e2 a f bes4 a g2 c8 bes a g f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 19
+\subsection{No. 92.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f1 e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f a d d2 c c4 bes8 a bes4 bes bes2 a4 a a g8 f e4 g g f a c bes c d e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 93.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f1 g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        r2 f ~ f4 e8 d e4 g ~ g f8 e f4 a ~ a g8 f g4 bes ~ bes a8 g a4 c ~ c bes8 a bes4 d c bes a g f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 94.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f1 e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f a f c'2 r4 c ~ c bes8 a bes4 g a2. a4 ~ a g8 f g4 e f a c f f2 e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 95.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key f \major
+      \relative c' {
+        f2. g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f8 a c4 f f e8 d c bes a g f4 a a g f e8 d e f g a bes c d c bes a g4 c8 bes a g f2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 20
+\subsection{No. 96.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key f \major
+      \relative c'' {
+        f2. e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f8 e f4 a c bes a bes8 a bes4 g a g f g8 a bes4 d c a f f e8 d e4 f2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 97.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key f \major
+      \relative c' {
+        f1. g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        r2 a f e d4 c d e f2 a f g a bes a c f, bes d g, c4 bes a2 g f1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 98.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key f \major
+      \relative c'' {
+        f1. e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f2 a f c' bes a bes g f e d c d4 c d2 e f a f f e4 d e2 f1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 99.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key f \major
+      \relative c' {
+        f2. g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a f e2 d4 r f a a2 g4 r a c c2 bes8 a g4 c8 bes a g f2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 100.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key f \major
+      \relative c'' {
+        f2. e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f a c2 c4 c2 bes4 bes2 a4 a2 g4 g2 f4 f2 e4 f2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 101.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key f \major
+      \relative c' {
+        f4. g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        r8 f d e4 g8 f a f g4 bes8 a c a bes4 d8 c16 [bes] a8 [g] f4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 21
+\subsection{No. 102.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key f \major
+      \relative c'' {
+        f4. e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        r8 f16 g a bes c4 c8 c bes16 a bes8 bes a a a g16 f g8 g f f f e16 d e8 f4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 103.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key f \major
+      \relative c' {
+        f4. g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        r8 f f' e16 f e8 d c bes a a g bes a c a bes d bes g c16 bes a g f4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 104.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key f \major
+      \relative c'' {
+        f4. e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f8a d c bes a bes d bes a g a bes c d c f f, f4 e8 f4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 105.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f1 g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f a g8 f e4 c e g f8 e f a c4 f e d e bes bes2 a4 c c bes8 a bes4 d c8 bes a bes a4 g f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 106.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f1 e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f8 [e] f [g a bes] c4 b c cis d e f d e2 c d4 c d e f c a f bes c d e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 22
+\subsection{No. 107.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f1 g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f4 e d c bes g e g f e d c bes d g f e c a' g f d' bes a g f g c f,1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 108.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f1 e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f a f g8 f e f g4 a bes c d f e d e c d c d bes c bes a c bes8 a bes c d4 e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 109.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key f \major
+      \relative c' {
+        f1. g a bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        r2 f f' e1 d2 c a f g1 bes2 a c f, bes1 a2 g1 c2 f,1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 110.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key f \major
+      \relative c'' {
+        f1. e d c bes a g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        r2 a f g4 f g2 a bes d bes a f a g d e f a c bes4 c d2 e f1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 111.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f2. f4 g2. g4 a2. a4 bes2. bes4 c2. c4 d2. d4 e2. e4 f1 f2. f4 e2. e4 d2. d4 c2. c4 bes2. bes4 a2. a4 g2. g4 f1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        r2 f ~ f e4 g ~ g2 f4 a ~ a2 g4 bes ~ bes2 a4 c ~ c2 bes4 d ~ d2 c4 bes ~ bes2 a4 g a2 d ~ d4 c8 bes c2 ~ c4 bes8 a bes2 ~ bes4 a8 g a2 ~ a4 g8 f g2 ~ g4 f8 e f2 ~ f4 e8 d e2 f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 23
+\subsection{No. 112.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f2. f4 g2. g4 a2. a4 bes2. bes4 c2. c4 d2. d4 e2. e4 f1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        r2 f f e f a a g a4 bes c f, bes2 a4 bes g2 g f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 113.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \major
+      \relative c'' {
+        f2 f e e d d c c bes bes a a g g f1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f4 g a d ~ d g, c2 ~ c4 f, bes2 ~ bes4 e, a2 ~ a4 d, g2 ~ g4 c, f2 ~ f4 e8 d e2 f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 114.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key f \major
+      \relative c' {
+        f4. f g g a a bes bes c c d d e e f ~ f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f8 a g f e d e c d e d e f e f a g f g bes a g f g a c bes a g a bes d c bes a bes c d c bes a g f a c f4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 24
+\subsection{No. 115.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key f \major
+      \relative c'' {
+        f4. f e e d d c c bes bes a a g g f ~ f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \major
+      \relative c' {
+        f8 e f a g a c d c a g a bes a bes d c bes a g a c bes a g bes a g f e f e f a g f e c d e d e f4. ~ f
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{D Minor.}
+
+\subsection{No. 116.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        d1 e f g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c'' {
+        r2 d d cis4 e d2 a bes g f a g f e f4 e d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 117.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \minor
+      \relative c'' {
+        d1 c bes a g f e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d f g a2 r4 a g f e d cis2 a' b cis d a4 d d2 cis d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 118.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key d \minor
+      \relative c' {
+        d2. e f g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d d' d cis r d a d bes2 g4 f e d g2 f4 e f e d2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 119.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key d \minor
+      \relative c'' {
+        d2. c bes a g f e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        d4 f d e2 f4 g a bes c cis d e d cis d f d d2 cis4 d2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 25
+\subsection{No. 120.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key d \minor
+      \relative c' {
+        d1. e f g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        r2 d d' cis1 r2 d a d e r e f c a g1 f2 e1 a2 d,1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 121.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key d \minor
+      \relative c'' {
+        d1. c bes a g f e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        r2 d d e1 f2 g a bes c1 f2 f1 e2 e1 d2 d1 cis2 d1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 122.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key d \minor
+      \relative c' {
+        d4. e f g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c'' {
+        r8 d d d cis cis d f16 [e d c] bes8 a g f a a a g f e a16 [g f e] d4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 123.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key d \minor
+      \relative c'' {
+        d4. c bes a g f e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        d8 f d a'4 a8 g bes g c4 d8 e d cis d d, f g16 [a] b8 [cis] d4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 124.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key d \minor
+      \relative c' {
+        d4. d e e f f g g a a b b cis cis d ~ d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c'' {
+        r8 d d, d'4 d8 d4. cis d4 a8 d4 f8 f4. e f4 c8 a4 f8 g4 a8 g4 f8 e4. a d, ~ d
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 26
+\subsection{No. 125.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key d \minor
+      \relative c'' {
+        d4. d c c bes bes a a g g f f e e d ~ d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        r8 d e f e d e4. c d4 c8 d4 e8 f4 g8 a4 c8 bes4 c8 d4 e8 f4 e8 d4 d8 d4. cis8 b cis d4. ~ d
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 126.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        d1 e f g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 d8 [cis] d [e f d] cis4 d e cis d a d c bes a g r f2 a a g4 f e a8 g f4 e d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 127.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \minor
+      \relative c'' {
+        d1 c bes a g f e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d8 [e] f [e f g] a4 r r c d bes8 [c] d [c d e] f4 r r f, bes c d e f d r d d2 cis d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 128.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        d1 e f g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d f d cis2 e d f f e r e4 a g2 f e f4 e d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 27
+\subsection{No. 129.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \minor
+      \relative c'' {
+        d1 c bes a g f e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \minor
+      \relative c' {
+        d4 e f g a2 r bes4 c d e f2 r e4 d cis e d a d2 d cis d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{B\flat Major.}
+\subsection{No. 130.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        r2 bes a c bes a g c4 bes a f g a bes c d ees c2. c4 bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes1 c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 131.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        r2 bes c a bes g a bes c a bes c4 d ees2 c d1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes1 a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 132.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        r2 bes a g f4 g a bes g a bes c a bes c d bes c d ees c d ees f d1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes1 c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 133.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes4 c d ees f ees d c bes a bes c d ees f f, g f g a bes f d f ees f g a bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes1 a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 28
+\subsection{No. 134.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes4 a8 bes d4 c8 bes a4 g8 f g4 a bes c d f f ees8 d c4 bes a bes c d ees d8 c d4 ees f ees8 d ees4 c bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes1 c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 135.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes4 c d ees f a,8 bes c4 d ees g,8 a bes4 c d f,8 g a4 bes c ees,8 f g4 a bes d,8 ees f4 g a g8 f g4 a bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes1 a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 136.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key bes \major
+      \relative c'' {
+        bes4 d bes a c a bes f bes g c bes a d c bes a bes f'2 ees4 d2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes2. c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 137.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key bes \major
+      \relative c'' {
+        bes8 a bes c d ees f4. ees8 d [c] bes a g a bes c d4 a bes c d ees f f, bes bes a8 g a4 bes2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes2. a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 29
+\subsection{No. 138.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 bes bes, bes' bes2 a4 g f f' d bes g ees' c bes a c f, f' f2 ees4 d c2 c bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes1 c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 139.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 bes d bes f'2 c4 d ees2 bes4 c d2 a4 bes c d ees c f ees d bes bes2 a bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes1 a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 140.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 bes d bes a bes a g f2 bes g4 a bes c a g f2 r4 bes ees d c2 c bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes1 c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 141.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes4 a bes d c bes c d ees d c bes a g a f g f g a bes a g f ees f g a bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes1 a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 142.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r2 bes bes a bes f g2 c4 bes a2 r4 f bes4 g ees' d c2 c bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes1 c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 143.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        r2 d ~ d c ~ c bes ~ bes a ~ a g ~ g f g a bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes1 a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 30
+\subsection{No. 144.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key bes \major
+      \relative c'' {
+        bes8 c d4 bes ~ bes a g f bes d ~ d c bes a8 bes c4 d ees d ees f8 ees d4 c bes2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes2. c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 145.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key bes \major
+      \relative c'' {
+        bes8 c d4 bes c8 bes c4 d ees8 d c4 bes a8 g a4 bes c8 d ees4 c ~ c bes f g8 f g4 a bes2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes2. a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 146.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key bes \major
+      \relative c'' {
+        bes2 f bes bes a g f bes d ~ d c bes a g a bes c d4 ees f ees d2 c bes1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes1. c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 147.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key bes \major
+      \relative c'' {
+        bes4 c d2 bes c4 bes a bes c d ees2 g, bes bes a f g4 f g2 a bes f d ees4 f g2 a bes1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes1. a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 148.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key bes \major
+      \relative c'' {
+        bes8 a bes d c bes a c bes a g a bes d ees f ees d c ees d c4 bes8 a f g a g a bes a bes ees d bes f' ees d c d c bes4. bes \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes4. bes c c d d ees ees f f g g a a bes bes,
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 31
+\subsection{No. 149.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key bes \major
+      \relative c'' {
+        bes8 d c bes d ees f4. a, bes8 g a bes c bes a4 g8 a4 f8 g4 f8 g4 a8 bes4 a8 bes c d ees4 c8 g4 a8 bes4. ~ bes \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes4. bes a a g g f f ees ees d d c c bes ~ bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 150.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes4 d8 f bes4 bes bes2 a4 g f g8 a bes4 d d2 c4 bes a f8 g a4 c bes c d ees f ees d c bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c' {
+        bes1 c d ees f g a bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 151.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes2 d4 ees f2 c4 d ees2 bes4 c d2 a4 bes c2 g4 a bes2 f4 g a2 g4 a bes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key bes \major
+      \relative c'' {
+        bes1 a g f ees d c bes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{G Minor.}
+\subsection{No. 152.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key g \minor
+      \relative c'' {
+        g1. a bes c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        g4 a bes c d ees f1 ees2 d1 bes2 a1 c2 bes a bes c1 bes2 a1 d2 g,1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 32
+\subsection{No. 153.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key g \minor
+      \relative c''' {
+        g1. f ees d c bes a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        r2 g g a4 g a2 bes c g a bes c d ees c ees ~ ees d bes c4 d e2 fis g1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 154.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key g \minor
+      \relative c'' {
+        g4. g a a bes bes c c d d e e fis fis g ~ g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        r8 g g bes a g g fis e fis4 a8 g a bes bes a g a4. c c8 bes a bes4 d8 d4. c4 bes8 a4 a8 a bes a g4. ~ g
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 155.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key g \minor
+      \relative c''' {
+        g4. g f f ees ees d d c c bes bes a a g ~ g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        r8 g a bes4 c8 d4. d, ees4 f8 g4 a8 bes4. f a4 g8 a4 f8 bes4. g4 g8 g4. fis g ~ g
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 33
+\subsection{No. 156.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key g \minor
+      \relative c'' {
+        g2. a bes c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 g g g f ees d g bes bes a g fis2 d'4 ~ d c bes a d, a' g2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 157.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key g \minor
+      \relative c''' {
+        g2. f ees d c bes a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 g g d' d, r r c c' c bes bes bes a ees' ~ ees d g, g2 fis4 g2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 158.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        g1 a bes c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        r2 g g fis4 d g a bes g a bes a g fis2 g c4 d c bes a2 bes4 a g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 159.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \minor
+      \relative c''' {
+        g1 f ees d c bes a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        g4 a bes c d ees f f, g f g a bes c d d, e2 fis g bes c4 d e fis g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 160.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        g1 a bes c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 g bes g g2 fis r4 g bes g a2 c r4 bes d bes c2 bes a a g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 161.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \minor
+      \relative c''' {
+        g1 f ees d c bes a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 g bes g a g a bes c bes a g fis e fis g a bes c a g a bes g g2 fis g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 34
+\subsection{No. 162.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key g \minor
+      \relative c'' {
+        g2. a bes c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 g g g fis8 e fis4 g2 bes4 ~ bes a g fis2 d'4 d c bes a d8 c bes a g2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 163.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key g \minor
+      \relative c''' {
+        g2. f ees d c bes a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 g g a8 g a4 bes c g a bes f bes bes a fis g d g g2 fis4 g2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{E\flat Major}
+\subsection{No. 164.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        ees4 g bes ees d ees d c bes2 ees c f4 ees d c d bes ees2 c4 ees f2 f ees1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        ees1 f g aes bes c d ees
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 165.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key ees \major
+      \relative c'' {
+        ees1 d c bes aes g f ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        ees4 f g aes bes2. bes4 bes2 aes aes4 g8 f g4 g g2 f f ees ees d ees1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 166.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key ees \major
+      \relative c'' {
+        r2 ees ees2 d4 c bes2 g c4 bes c f d2 bes ees c bes aes g1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        ees1 f g aes bes c d ees
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 35
+\subsection{No. 167.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key ees \major
+      \relative c'' {
+        ees1 d c bes aes g f ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 ees g ees f2 g aes4 g aes f g ees d ees f2 c4 f ees2 bes4 ees ees2 d ees1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 168.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        ees1 f g aes bes c d ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        r2 ees ees d ees g g f g bes bes2 aes4 g f2 g4 f ees1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 169.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key ees \major
+      \relative c'' {
+        ees1 d c bes aes g f ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        r2 ees f g aes4 g f ees d2 bes4 c d ees f d ees bes ees2 ees4 d8 c d4 d ees1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 170.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key ees \major
+      \relative c' {
+        ees2. f g aes bes c d ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 ees ees ees d f f ees g g f aes aes g bes bes aes g f bes8 aes g f ees2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 171.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key ees \major
+      \relative c'' {
+        ees2. d c bes aes g f ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 ees g bes2 bes4 bes aes aes aes g g g f f f ees ees d c d ees2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 172.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key ees \major
+      \relative c' {
+        ees1. f g aes bes c d ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        r2 r ees ees d r r ees g g f r r g bes bes aes g f g f ees1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 36
+\subsection{No. 173.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key ees \major
+      \relative c'' {
+        ees1. d c bes aes g f ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        r2 r ees f1. r2 ees f g1 bes2 r c c c bes c d c d ees1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 174.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key ees \major
+      \relative c' {
+        r8 ees g bes4 ees8 ees4. d4 c8 bes4 aes8 g bes ees c4. f4 ees8 d4 c8 d4 bes8 ees c d ees4 ees8 f4. f ees ~ ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        ees4. ees f f g g aes aes bes bes c c d d ees ~ ees
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 175.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key ees \major
+      \relative c'' {
+        ees4. ees d d c c bes bes aes aes g g f f ees ~ ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 ees8 g f ees bes'4. bes bes8 aes g aes4 aes8 aes4. g g4 f8 f ees d ees4 bes8 ees4 ees8 ees4. d8 c d ees4. ~ ees
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 176.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key ees \major
+      \relative c' {
+        ees2. f g aes bes c d ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 ees ees' d2 c4 bes ees d c bes aes g bes ees, aes c aes f bes aes g2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 37
+\subsection{No. 177.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key ees \major
+      \relative c'' {
+        ees2. d c bes aes g f ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 ees ees f2 g4 aes g f g2 bes4 c8 bes c4 d ees bes ees ees d8 c d4 ees2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 178.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key ees \major
+      \relative c' {
+        ees1. f g aes bes c d ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        r2 ees ees' d f d ees bes g c f ees d bes g aes g f bes4 aes g2 f ees1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 179.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key ees \major
+      \relative c'' {
+        ees1. d c bes aes g f ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        ees2 g ees f bes bes bes aes4 g f ees d2 bes' g c4 bes c2 d ees ees, ees' ees1 d2 ees1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 180.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        ees1 f g aes bes c d ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c' {
+        ees4 ees'8 d c4 bes aes g aes f bes ees ees, g f2 aes g4 bes8 aes g4 ees aes bes c ees bes aes g f ees1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 181.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key ees \major
+      \relative c'' {
+        ees1 d c bes aes g f ees \bar "||"
+      }
+    }
+    \new Staff {
+      \key ees \major
+      \relative c'' {
+        ees4 ees,8 f g4 aes bes c d f ees ees,8 d ees4 f g aes bes g c c,8 bes c4 d ees g8 bes ees4 ees, ees2 d ees1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+
+%Page 38
+\section{C Minor.}
+\subsection{No. 182.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \minor
+      \relative c' {
+        c1 d ees f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c'' {
+        r2 c ~ c b c ees ~ ees d4 c b2 g f ees d g c,1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 183.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key c \minor
+      \relative c'' {
+        c1 bes aes g f ees d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c ees f g2 ees f4 g aes c ~ c bes ees2 ~ ees d ~ d c ~ c b c1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 184.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \minor
+      \relative c' {
+        c2. d ees f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c c' c b8 a b4 c g c aes2 f4 ees d c f2 ees4 d4 g8 f ees d c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 185.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \minor
+      \relative c'' {
+        c2. bes aes g f ees d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c c d8 c d4 ees f g aes bes ees ees ees d d d c c c b8 a b4 c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 186.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \minor
+      \relative c' {
+        c2. d ees f g a b c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c'' {
+        c4 c, c' bes8 c bes4 aes g f ees ~ ees d f ~ f ees g ~ g f8 g f ees d2 ees8 d c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 187.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key c \minor
+      \relative c'' {
+        c2. bes aes g f ees d c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 c8 d ees f g2 bes4 c aes8 bes c d ees2 ees4 ees d8 c b d c8 d ees4 c c2 b4 c2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 39
+\subsection{No. 188.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key c \minor
+      \relative c' {
+        c4. c d d ees ees f f g g a a b b c ~ c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c' {
+        c8 ees g c4 c8 c4. b c8 g ees c4 c'8 d4. f ees8 d c b4 g8 f4 g8 f4 ees8 d4 g8 f ees d c4. ~ c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 189.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key c \minor
+      \relative c'' {
+        c4. c bes bes aes aes g g f f ees ees d d c c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c' {
+        c4 d8 ees4 f8 g f ees d4 ees8 f4 ees8 d4 f8 ees g bes ees4 ees,8 aes4 g8 aes4 f8 g a b c g c c4. b8 a b c4. ~ c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 190.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key c \minor
+      \relative c' {
+        c4. c d d ees ees f f g g a a b b c ~ c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c'' {
+        c4 d8 ees4 c8 b4 c8 d4 b8 c4 g8 c4 bes8 aes4 g8 f4 d8 ees4. ees'4 d8 c4. f4 ees8 d4 d8 d ees d c4. ~ c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 40
+\subsection{No. 191.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key c \minor
+      \relative c'' {
+        c4. c bes bes aes aes g g f f ees ees d d c ~ c \bar "||"
+      }
+    }
+    \new Staff {
+      \key c \minor
+      \relative c'' {
+        c4 d8 ees4 c8 d4 c8 bes4 g8 c4 bes8 c4 d8 ees4 bes8 ees4. ees8 d c d c b c4 g8 c4. c b c ~ c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{A\flat Major.}
+\subsection{No. 192.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 aes c aes g aes g f ees aes g aes f bes aes bes g c bes c aes des c des bes ees des ees c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c' {
+        aes1 bes c des ees f g aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 193.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 aes c aes bes aes bes c des c bes aes g f g ees f ees f g aes g aes ees f ees f g aes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        aes1 g f ees des c bes aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 194.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 aes c aes g f8 ees f4 g aes g aes ees f ees f bes g f g c aes g aes des bes aes bes ees c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c' {
+        aes1 bes c des ees f g aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 195.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        r2 aes bes c des f, g aes bes f4 g aes bes c ees des c des bes c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        aes1 g f ees des c bes aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 41
+\subsection{No. 196.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        r2 aes aes g4 f ees2 c' ~ c bes4 aes g2 c4 bes aes2 des4 c bes2 ees4 des c1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c' {
+        aes1 bes c des ees f g aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 197.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        r2 c ~ c bes4 c des2 des des c c bes bes aes aes g aes1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        aes1 g f ees des c bes aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 198.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key aes \major
+      \relative c'' {
+        aes4 bes aes g f g aes bes c bes2 aes4 g f g aes bes c bes aes bes aes2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c' {
+        aes2. bes c des ees f g aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 199.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key aes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 aes c ees2 ees4 ees des8 c des4 des c c c bes8 aes bes4 bes aes aes aes g8 f g4 aes2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        aes2. g f ees des c bes aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 200.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key aes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 c ees des g, bes bes aes c c bes aes g ees ees' ees des8 [c] bes [aes] bes4 c bes aes2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c' {
+        aes2. bes c des ees f g aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 201.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key aes \major
+      \relative c'' {
+        aes4 c des ees2 g,4 aes8 [g] aes [bes] c [des] ees2 ees,4 f8 [ees] f [g] aes [bes] ees,4 f8 g aes4 bes f g aes2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        aes2. g f ees des c bes aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 42
+\subsection{No. 202.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key aes \major
+      \relative c'' {
+        r2 c aes des c bes aes g aes f1 bes2 g f g aes4 bes c2 des ees1 des2 c1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c' {
+        aes1. bes c des ees f g aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 203.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key aes \major
+      \relative c'' {
+        aes1 aes2 bes1 c2 des c des ees1 ees,2 f1 g2 aes1 c2 des1 bes2 c1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        aes1. g f ees des c bes aes
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 204.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key aes \major
+      \relative c' {
+        aes1 bes c des ees f g aes \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        r2 aes aes4 g8 f g4 bes aes bes aes g f2 bes4 aes g f ees ees' ees2 des4 c bes c8 des c4 bes aes1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 205.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        aes1 g f ees des c bes aes \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        r2 aes bes4 bes8 aes bes4 c des2 f, g4 g8 f g4 aes bes2 f4 g aes bes c aes des2 g, aes1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 206.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key aes \major
+      \relative c' {
+        aes2. bes c des ees f g aes \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 aes aes aes g f ees c' c c bes aes g ees' ees ees des c bes c bes aes2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 207.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key aes \major
+      \relative c'' {
+        aes2. g f ees des c bes aes \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 aes8 [bes] c [des] ees4 f g aes8 bes c4 des ees ees,8 [f] g [aes] bes4 c des ees ees, aes g f g aes2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 43
+\subsection{No. 208.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key aes \major
+      \relative c' {
+        aes1. bes c des ees f g aes \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        aes2 c aes g bes g aes ees aes f bes aes g c bes aes des c bes ees4 des c bes aes1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 209.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key aes \major
+      \relative c'' {
+        aes1. g f ees des c bes aes \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        r2 aes aes, bes1 c2 des ees f g1 aes2 bes c des ees c aes des f, g aes1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 210.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key aes \major
+      \relative c' {
+        aes4. aes bes bes c c des des ees ees f f g g aes ~ aes \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        r8 aes g f g aes g4 f8 g aes bes aes4 g8 aes bes c bes4 c8 bes4 aes8 g4 f8 ees4 c8 des4 ees8 f g aes bes c des ees4 des8 c4. ~ c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 44
+\subsection{No. 211.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key aes \major
+      \relative c'' {
+        aes4. aes g g f f ees ees des des c c bes bes aes ~ aes \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        aes4 bes8 c4 aes8 bes4 aes8 bes4 c8 des4 c8 des4 f,8 g4. ees f4 ees8 f4 g8 aes4 g8 aes4 c8 des4 c8 des4 bes8 c4. ~ c
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 212.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 9/8
+      \key aes \major
+      \relative c' {
+        aes4. bes c des ees f g aes bes aes ~ aes aes g ~ g f ees ~ ees des c ~ c bes aes aes aes \bar "||"
+      }
+    }
+    \new Staff {
+      \key aes \major
+      \relative c'' {
+        r8 c aes g bes g aes c aes f bes aes g c bes aes des c bes ees des c bes aes g f g aes c ees aes,4. c8 aes c bes g aes bes4 c8 des c des ees4 ees,8 f4. g8 f g aes c bes aes bes c des f, g aes4. c4 ees8 aes,4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{F Minor.}
+\subsection{No. 213.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        f1 g aes bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f8 g aes4 f r e8 f g4 e r f8 g aes4 f r g8 aes bes4 g r aes8 bes c4 aes bes c bes aes g2 aes4 g f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 45
+\subsection{No. 214.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \minor
+      \relative c'' {
+        f1 ees des c bes aes g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f8 g aes4 bes c2 r4 c, des des8 ees f4 g aes2 r4 aes des c des bes c2 f ~ f e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 215.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        f1 g aes bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        r2 f ~ f e f aes ~ aes g4 f e2 c' ~ c2 bes4 aes g2. g4 f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 216.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key f \minor
+      \relative c'' {
+        f1 ees des c bes aes g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 f8 [g] aes [g] aes [bes] c4 c8 bes c4 c, des ees f8 [ees] f [g] aes4 bes c ees ~ ees des8 c des4 bes c bes aes f f2 e f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 217.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key f \minor
+      \relative c' {
+        f2. g aes bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 r f ~ f e g ~ g f aes ~ aes g bes ~ bes aes c ~ c bes aes g f g f2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 218.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key f \minor
+      \relative c'' {
+        f2. ees des c bes aes g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        f4 aes f g2 aes4 bes c des ees2 c4 d2 e4 f c f f e8 d e4 f2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 46
+\subsection{No. 219.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key f \minor
+      \relative c' {
+        f1. g aes bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        r2 f4 g aes f f2 e4 f g e f2 aes c des c bes aes1 c2 bes4 c bes aes g f g2 c4 bes aes g f1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 220.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key f \minor
+      \relative c'' {
+        f1. ees des c bes aes g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        r2 f4 g aes bes c2 r c ~ c2 bes4 aes g f e2 r f g f e f4 g aes2 f ~ f e4 d e2 f1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 221.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key f \minor
+      \relative c' {
+        f1. g aes bes c d e f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        r2 f f' f e4 d e2 f c aes aes g bes bes aes f bes r bes g c4 bes aes g f1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 47
+\subsection{No. 222.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key f \minor
+      \relative c'' {
+        f1. ees des c bes aes g f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        r2 f f c' r c bes des bes ees r c des bes des c r f, f1 e2 f1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 223.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key f \minor
+      \relative c' {
+        f4. ~ f g ~ g aes ~ aes bes ~ bes c ~ c d ~ d e ~ e f ~ f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        r8 f g aes g f e4 d8 e4 c8 f4 aes8 c4 aes8 aes4. g aes c4 aes8 f g aes bes4 aes8 g4. c f, ~ f
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 224.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key f \minor
+      \relative c'' {
+        f4. ~ f ees ~ ees des ~ des c ~ c bes ~ bes aes ~ aes g ~ g f ~ f \bar "||"
+      }
+    }
+    \new Staff {
+      \key f \minor
+      \relative c' {
+        f4 g8 aes4 bes8 c4. c, des4 ees8 f4 g8 aes4. c des4 c8 bes4 des8 c d e f c f f4. e f ~ f
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+
+%Page 48
+\section{D\flat Major.}
+\subsection{No. 225.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key des \major
+      \relative c' {
+        des4 f aes des des2 c4 bes aes bes8 c des4 f f2 ees4 des c bes8 aes bes4 c des c des bes aes ges f ees des1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c' {
+        des1 ees f ges aes bes c des
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 226.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key des \major
+      \relative c'' {
+        r2 des ees4 des c ees des c bes des c bes aes c bes aes bes c des aes f des ges aes bes c des1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c'' {
+        des1 c bes aes ges f ees des
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 227.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key des \major
+      \relative c' {
+        des1 ees f ges aes bes c des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c'' {
+        r2 des c bes aes des bes ees c f des ges ees ees f1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 228.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key des \major
+      \relative c'' {
+        des1 c bes aes ges f ees des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 des f ges aes2 r4 aes aes2 ges ges f f4 ees8 des ees4 ees ees2 des4 des' des2 c des1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 229.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key des \major
+      \relative c' {
+        des2. ees f ges aes bes c des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c'' {
+        des4 aes des c2 bes4 aes des c bes2 ees4 c bes c des bes des ees f ees des2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 230.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key des \major
+      \relative c'' {
+        des2. c bes aes ges f ees des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c'' {
+        des4 f des ees2 c4 des2 ees4 f2 aes,4 bes2 c4 des aes des des c8 bes c4 des2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 49
+\subsection{No. 231.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key des \major
+      \relative c' {
+        des4. ees f ges aes bes c des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c' {
+        r8 des \noBeam des' c4 bes8 aes f des ees4 ges8 f4 aes8 ges4 f8 des ees des des4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 232.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key des \major
+      \relative c'' {
+        des4. c bes aes ges f ees des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c'' {
+        r8 des \noBeam des, ees4 f8 ges aes bes c4 des8 ees bes c des aes des des4 c8 des4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 233.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key des \major
+      \relative c' {
+        des1. ees f ges aes bes c des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c' {
+        r2 des des' des c bes aes ges f des ees f f aes f ges bes ges ees aes4 ges f ees des1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 234.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key des \major
+      \relative c'' {
+        des1. c bes aes ges f ees des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c' {
+        r2 des4 ees f ges aes2 bes c des des, ees f ges aes bes c des aes f des des1 c2 des1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 50
+\subsection{No. 235.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key des \major
+      \relative c' {
+        des4. ~ des ees ~ ees f ~ f ges ~ ges aes ~ aes bes ~ bes c ~ c des ~ des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c' {
+        des8 des' des des c bes c4. ees des8 c des aes des c bes4. ges f8 ees f aes ges f ges4. bes aes8 bes aes ges f ees des4. ~ des
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 236.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key des \major
+      \relative c'' {
+        des4. ~ des c ~ c bes ~ bes aes ~ aes ges ~ ges f ~ f ees ~ ees des ~ des \bar "||"
+      }
+    }
+    \new Staff {
+      \key des \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        des8 des des des c des aes'4. r4 aes8 aes8 ges f ges4 ges8 ges4. f4 f8 f ees des ees f ges aes bes c des4 des8 des4. c8 bes c des4. ~ des
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 51
+\section{G Major.}
+
+\subsection{No. 237.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g1 a b c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g4 a b g fis e fis a g fis g b a g a c b a b d c b c e d c b a g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 238.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \major
+      \relative c''' {
+        g1 fis e d c b a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g4 a b g a g a b c d e c b a b g a g a fis g fis g b c d e fis g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 239.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key g \major
+      \relative c'' {
+        g2. a b c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 g g g fis r r g b ~ b a c ~ c b d ~ d c b a d8 [c] b [a] g2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 240.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key g \major
+      \relative c''' {
+        g2. fis e d c b a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 g b d c b c b a b2 d4 e fis g d c b c b a b2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 241.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key g \major
+      \relative c'' {
+        g4. a b c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        r8 g16 [a] b [g] fis8 e fis g b16 [a] g [b] a8 c a b d16 [c] b [d] c8 e c a d16 [c] b [a] g4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 52
+\subsection{No. 242.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key g \major
+      \relative c''' {
+        g4. fis e d c b a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        r8 g16 [a] b [g] a4 b8 c16 [d] c [b] a [g] fis8 e d e8 c16 [d] e [fis] g [a] b8 \noBeam g g fis16 [e] fis8 g4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 243.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key g \major
+      \relative c'' {
+        g4. ~ g a ~ a b ~ b c ~ c d ~ d e ~ e fis ~ fis g ~ g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        r8 g g b a g fis4. a g8 fis e d g fis e4. a4 g8 fis g a b a b c4. e4 c8 a d c b4 a8 g4. ~ g
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 244.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key g \major
+      \relative c''' {
+        g4. ~ g fis ~ fis e ~ e d ~ d c ~ c b ~ b a ~ a g ~ g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        r8 g g b a g a4. d d8 c b c4 c8 c4. b b8 a g a4 a8 a4. g g8 fis e fis4 fis8 g4. ~ g
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 53
+\subsection{No. 245.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key g \major
+      \relative c'' {
+        g\breve a b c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key g \major
+      \relative c'' {
+        r2 g b g fis e fis d g a g fis e fis4 g a2 g fis d d' g, c b c a d c b a g\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 246.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key g \major
+      \relative c''' {
+        g\breve fis e d c b a g \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key g \major
+      \relative c'' {
+        r2 g b g a g a b c d e c b a b g a g fis a g fis g b c d e fis g\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 247.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key g \major
+      \relative c'' {
+        g1. a b c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g4 a b2 g fis e4 d e fis g2 b g e a g fis4 d d'2 b c4 d c2 b a b a g1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 54
+\subsection{No. 248.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key g \major
+      \relative c''' {
+        g1. fis e d c b a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        r2 g g a a4 g a b c2 c4 d e c c2 b b b a4 g a2 a g g a4 b c d e fis g1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 249.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g1 a b c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        r2 g g2 fis4 a a2 g4 b b2 a b d c b a a g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 250.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \major
+      \relative c''' {
+        g1 fis e d c b a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 g8 a b4 c d c b d c b c a b a g b b2 a a g g fis g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 251.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g1 a b c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g4 fis e g fis e d fis g a b g a b c a b c d b c d c b a b8 c b4 a g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 252.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key g \major
+      \relative c''' {
+        g1 fis e d c b a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g4 a b g d e fis d g fis g a b a b g e d e fis g fis g d c d e fis g1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 55
+\subsection{No. 253.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key g \major
+      \relative c'' {
+        g2. a b c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g8 fis e4 g g fis e d g fis e a g fis b a g c b a d8 [c] b [a] g2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 254.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key g \major
+      \relative c''' {
+        g2. fis e d c b a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g4 b g a4. g8 a [b] c b a4 g fis2 d4 e8 d e4 fis g d g g2 fis4 g2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 255.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key g \major
+      \relative c'' {
+        g1. a b c d e fis g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        r2 g g fis e fis g fis g a g a b a b c b c d4 c b2 a g1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 256.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key g \major
+      \relative c''' {
+        g1. fis e d c b a g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g2 b c d c b c b a b a g a g fis g d g fis e fis g1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 56
+\subsection{No. 257.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/4
+      \key g \major
+      \relative c'' {
+        g2. g a a b b c c d d e e fis fis g ~ g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        r2. g2 g4 g fis e fis2 a4 g fis g d g fis e2 d4 e a g fis2 e4 fis b a g fis g c2 b4 a d c b2 a4 g2. ~ g
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 258.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/4
+      \key g \major
+      \relative c''' {
+        g2. g fis fis e e d d c c b b a a g ~ g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g2 a4 b2 g4 d'2 c4 b2 d4 d c b c2 c4 c2. b b2 a4 a g fis g2 fis4 e2 d4 c d e d e fis g2. ~ g
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 259.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key g \major
+      \relative c'' {
+        g4. g a a b b c c d d e e fis fis g ~ g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g4. g fis4 e8 fis4 d8 g4. g a4 g8 a4 c8 b4. d d c4 b8 a4 a8 a b a g4. ~ g
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 57
+\subsection{No. 260.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key g \major
+      \relative c''' {
+        g4. g fis fis e e d d c c b b a a g ~ g \bar "||"
+      }
+    }
+    \new Staff {
+      \key g \major
+      \relative c'' {
+        g4 g8 g4 b8 d4. b4 d8 c4 b8 a4 g8 fis4. d e4 d8 e4 fis8 g4 d8 g4 g8 g4. fis g ~ g
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{E Minor.}
+\subsection{No. 261.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        e1 fis g a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        r2 e4 e e2 dis e2 g4 g g2 fis g2 b4 b b2 a4 g fis2 g4 fis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 262.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \minor
+      \relative c'' {
+        e1 d c b a g fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        r2 e4 e fis e fis g a2 e4 fis g a b g g2 fis g4 fis e2 e dis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 263.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        e1 fis g a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        r2 e dis fis fis e fis a a g fis e b'4 a g fis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 264.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \minor
+      \relative c'' {
+        e1 d c b a g fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        e4 fis g a b a b g a b c a a2 g fis4 e dis fis e b e2 e dis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 58
+\subsection{No. 265.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key e \minor
+      \relative c' {
+        e2. fis g a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r2 e4 e dis r4 r4 e g g fis e dis2 b'4 b a g fis b8 [a] g [fis] e2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 266.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key e \minor
+      \relative c'' {
+        e2. d c b a g fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 e g fis d fis a fis a g d g fis dis fis e b e e2 dis4 e2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 267.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key e \minor
+      \relative c' {
+        e4. e fis fis g g a a b b cis cis dis dis e ~ e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        e4. e e8 dis cis dis b dis e g fis e dis e fis4 e8 fis g a g fis e dis4 b'8 a4 b8 a4 g8 fis4. b e, ~ e
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 268.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key e \minor
+      \relative c'' {
+        e4. e d d c c b b a a g g fis fis e ~ e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        e4 fis8 g4 e8 fis4 e8 fis4 g8 e fis g a g fis g fis e dis4 e8 fis dis e fis e fis g4. e e8 dis cis dis4 dis8 e4. ~ e
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 59
+\subsection{No. 269.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key e \minor
+      \relative c' {
+        e2. fis g a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 e e dis cis dis e fis g g fis a a g b b a8 [g] fis [e] fis4 b b e,2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 270.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key e \minor
+      \relative c'' {
+        e2. d c b a g fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 e8 [fis] g [a] b4 a g a e fis g d g fis e dis e b e e2 dis4 e2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 271.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key e \minor
+      \relative c' {
+        e1. fis g a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        r2 e e' e dis4 cis dis2 e b g g fis a a g b b a g fis b4 a g fis e1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 272.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key e \minor
+      \relative c'' {
+        e1. d c b a g fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \minor
+      \relative c' {
+        r2 e e fis4 e fis2 g a e fis g d g a b c b1 e2 e1 dis2 e1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 60
+\section{D Major.}
+\subsection{No. 273.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d1 e fis g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d fis d cis d e cis d fis a d b cis8 d e4 d cis b a fis g a b g e a8 g fis4 e d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 274.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \major
+      \relative c'' {
+        d1 cis b a g fis e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d8 [e] fis [e] fis [g] a2 r4 a a g8 fis g4 g g fis8 e fis4 a b b8 a b4 cis d cis8 b a4 d d2 cis d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 275.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key d \major
+      \relative c' {
+        d2. e fis g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d d' cis2 b4 a g fis e2 g4 fis a fis g b g e fis e d2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 276.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key d \major
+      \relative c'' {
+        d2. cis b a g fis e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d d e8 d e4 fis g a b cis8 b cis4 d e8 d e4 b8 cis d cis d4 a g8 a b4 cis d2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 61
+\subsection{No. 277.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key d \major
+      \relative c' {
+        d\breve e fis g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key d \major
+      \relative c'' {
+        r2 d d, d' d1 cis2 b a1 d2 cis b1 g fis2 e fis d g fis g e a g fis e d\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 278.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key d \major
+      \relative c'' {
+        d\breve cis b a g fis e d \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key d \major
+      \relative c' {
+        r2 d fis d a' b cis a d cis b d cis b cis d e e4 d e2 cis d a fis d g g4 a b2 cis d\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 279.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key d \major
+      \relative c' {
+        d2. e fis g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d d' d cis8 d e4 ~ e d8 [cis] d [a] b4 e d d cis a a g8 [fis] g [b] a g fis4 e d2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 280.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key d \major
+      \relative c'' {
+        d2. cis b a g fis e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 d d e d cis d cis b cis b a b8 a b4 cis d8 [e] fis [d] a [fis] g a b4 cis d2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 62
+\subsection{No. 281.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key d \major
+      \relative c' {
+        d1. e fis g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c'' {
+        d2 d,4 fis a d cis1 b2 a fis d' b2 cis4 d e d cis2 a fis g fis g a4 b a g fis e d1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 282.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key d \major
+      \relative c'' {
+        d1. cis b a g fis e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        r2 d d e1 fis2 g4 fis g a b d cis1 a2 b4 a b2 cis d d, d' d1 cis2 d1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 283.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key d \major
+      \relative c' {
+        d4. ~ d e ~ e fis ~ fis g ~ g a ~ a b ~ b cis ~ cis d ~ d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d4. d' d8 cis b a4 g8 fis4. fis' ~ fis e4 d8 cis4 cis8 fis4 e8 d4. b a8 b a g fis e d4. ~ d
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 63
+\subsection{No. 284.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key d \major
+      \relative c'' {
+        d4. ~ d cis ~ cis b ~ b a ~ a g ~ g fis ~ fis e ~ e d ~ d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d4 e8 fis4 g8 a4. fis g4 a8 b4 d8 cis4. a b4 a8 b4 cis8 d cis b a4 d,8 g4 a8 b4 cis8 d4. ~ d
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 285.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \major
+      \relative c'' {
+        r2 d d2 cis4 b a2 d4 cis b2 e4 d cis2 b4 cis d2 d e e d1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d1 e fis g a b cis d
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 286.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \major
+      \relative c'' {
+        d1 cis b a g fis e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        r2 d e fis g g g fis4 fis fis e8 d cis4 e d a d2 d cis d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 287.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d1 e fis g a b cis d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        r2 d d2 cis4 e e2 d4 cis b2 e4 d cis2 a' a2 g4 fis e4 fis8 g fis4 e d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 288.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \major
+      \relative c'' {
+        d1 cis b a g fis e d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 d fis g a2 e4 fis g2 d4 e fis2 cis4 d e2 b4 cis d e fis d d2 cis d1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 64
+\subsection{No. 289.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a d d d cis8 b cis4 e d a d cis b a b e cis b cis a d cis d fis e2 e d1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d1 e fis g a b cis d
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 290.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key d \major
+      \relative c'' {
+        r2 d e cis d b cis a b e a, d d cis d1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c'' {
+        d1 cis b a g fis e d
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 291.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key d \major
+      \relative c' {
+        d4. d e e fis fis g g a a b b cis cis d ~ d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d4 cis8 b4 d8 cis4 b8 cis4 e8 d4 cis8 d4 fis8 e4 d8 e4 g8 fis4 e8 fis4 a8 a g fis g4 b8 a4 g8 fis4 e8 d4. ~ d
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 292.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key d \major
+      \relative c'' {
+        d4. d cis cis b b a a g g fis fis e e d d \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d4 e8 fis4 g8 a4. e4 fis8 g4 fis8 g4 e8 fis4. fis fis8 e d e4 e8 e4. d4 d8 d cis b cis4 cis8 d4. ~ d
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 65
+\subsection{No. 293.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 2/4
+      \key d \major
+      \relative c' {
+        d4 d e e fis fis g g a a b b cis cis d2 \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d4 d d cis d fis fis e fis a a g8 fis e4 e d2
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 294.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 2/4
+      \key d \major
+      \relative c'' {
+        d4 d cis cis b b a a g g fis fis e e d2 \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d4 d e fis g g g fis fis e e d d cis d2
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 295.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 2/4
+      \key d \major
+      \relative c'' {
+        d4 d d cis8 b a4 d8 cis b4 e8 d cis4 fis8 e e d g fis e4 e d2 \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d4 d e e fis fis g g a a b b cis cis d2
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 296.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 2/4
+      \key d \major
+      \relative c'' {
+        d4 d cis cis b b a a g g fis fis e e d2 \bar "||"
+      }
+    }
+    \new Staff {
+      \key d \major
+      \relative c' {
+        d8 e fis d e d e fis g fis g e fis d cis d e d e cis d a b d d4 cis d2
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{B Minor}
+\subsection{No. 297.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        b4 cis d b b ais gis ais b cis d b cis b cis e d e d cis b ais b e cis2 cis b1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c' {
+        b1 cis d e fis gis ais b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 298.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        b2 d4 b cis b cis d e2 b4 cis d2 a g4 a b cis d cis b2 b ais b1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        b1 a g fis e d cis b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 66
+\subsection{No. 299.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key b \minor
+      \relative c'' {
+        b4 cis d e d cis b cis d cis2 b4 ais gis ais b cis d cis d cis b2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c' {
+        b2. cis d e fis gis ais b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 300.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key b \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 b d d cis r r b cis d a r r b cis d b b b ais ais b2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        b2. a g fis e d cis b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 301.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key b \minor
+      \relative c'' {
+        b1 b2 b ais cis cis b d d cis e e d cis b cis d cis1 cis2 b1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c' {
+        b1. cis d e fis gis ais b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 302.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key b \minor
+      \relative c'' {
+        r2 b d d cis cis cis b b b ais b cis b cis d4 a fis2 b b1 ais2 b1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        b1. a g fis e d cis b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 303.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        r2 b b ais b d d cis4 b ais2 b4 cis b2 cis4 d cis2 cis b1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c' {
+        b1 cis d e fis gis ais b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 304.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 b8 cis d4 b cis a8 b cis4 d e a,8 b cis4 b8 cis d4 a fis a g fis gis ais b cis d b b2 ais b1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        b1 a g fis e d cis b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 67
+\subsection{No. 305.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key b \minor
+      \relative c' {
+        b4. ~ b cis ~ cis d ~ d e ~ e fis ~ fis gis ~ gis ais ~ ais b ~ b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        r8 b cis d cis b ais4 gis8 ais4 cis8 b4 a8 b4 d8 cis4. e d4 e8 d4 cis8 b cis d e4 d8 cis4 cis8 cis d cis b4. ~ b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 306.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key b \minor
+      \relative c'' {
+        b4. ~ b a ~ a g ~ g fis ~ fis e ~ e d ~ d cis ~ cis b ~ b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        b8 d cis b cis d cis4 b8 cis4 d8 e d e b4 cis8 d cis b a4 fis8 g4 a8 b4 cis8 d4. d, e4 fis8 gis4 ais8 b4. ~ b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 307.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \minor
+      \relative c' {
+        b1 cis d e fis gis ais b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        r2 b b2 ais4 cis cis2 b4 d ~ d2 cis d d, e d cis fis b,1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 308.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        b1 a g fis e d cis b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        r2 b cis4 b cis d e2 b4 cis d cis d a g a b cis d2 b b ais b1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 68
+\subsection{No. 309.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key b \minor
+      \relative c' {
+        b2. cis d e fis gis ais b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 b b b ais8 gis ais4 b fis b cis2 e4 d2 cis4 b2 b4 fis'8 e d4 cis b2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 310.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key b \minor
+      \relative c'' {
+        b2. a g fis e d cis b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \minor
+      \relative c'' {
+        b4 d b cis8 b cis4 d e b cis d8 cis d4 a g8 [a] b [a] b [cis] d e fis4 b, b ais8 gis ais4 b2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{A Major.}
+\subsection{No. 311.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 cis a a gis8 fis gis4 a e cis' cis b a gis fis gis a b cis8 d e d cis4 b a2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c' {
+        a2. b cis d e fis gis a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 312.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a a b8 a b4 cis d8 cis b4 a a gis e fis8 e fis4 gis a b cis d fis, gis a2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a2. gis fis e d cis b a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 313.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key a \major
+      \relative c'' {
+        r2 cis a d cis b b a gis fis b a gis cis b b a d b e d d cis1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c' {
+        a1. b cis d e fis gis a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 69
+\subsection{No. 314.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key a \major
+      \relative c'' {
+        r2 cis d e b cis d a b cis1 e,2 fis b gis a e cis d4 e fis2 gis a1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a1. gis fis e d cis b a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 315.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key a \major
+      \relative c'' {
+        a8 gis a cis b a gis fis gis b a gis a gis fis e4 cis'8 cis4. b4 a8 gis4 b8 e4 e8 e d cis d4 cis8 b4. b a ~ a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c' {
+        a4. a b b cis cis d d e e fis fis gis gis a ~ a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 316.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key a \major
+      \relative c'' {
+        r8 a b cis b a b4. b b8 a gis a4 fis8 gis4. e fis8 e fis gis fis gis a gis fis e4 a8 a gis fis gis4 gis8 a4. a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a4. a gis gis fis fis e e d d cis cis b b a ~ a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 70
+\subsection{No. 317.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a cis b8 a gis4 fis8 e fis4 gis a e a gis fis gis8 a b4 a gis fis e e' e2 d4 cis b2 cis4 b a1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c' {
+        a1 b cis d e fis gis a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 318.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a8 b cis4 d e2 b4 cis d cis8 b a4 b cis2 r4 e, fis e fis gis a e a2 a gis a1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a1 gis fis e d cis b a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 319.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a4 b cis a gis fis gis b a gis a cis b a b d cis b cis e d cis d a b2 b a1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c' {
+        a1 b cis d e fis gis a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 320.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a cis a b a b cis d cis b a gis fis gis e fis e fis gis a gis a e d e fis gis a1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a1 gis fis e d cis b a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 321.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a cis a a2 gis4 fis e fis8 gis a4 cis cis2 b4 a gis b e gis, a b cis d b2 b a1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c' {
+        a1 b cis d e fis gis a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 322.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a2 cis cis b4 cis d2 d d cis b4 cis d b e2 a, a4 gis8 fis gis4 gis a1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a1 gis fis e d cis b a
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 71
+\subsection{No. 323.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c' {
+        a1 b cis d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        r2 a a gis4 fis e fis8 gis a4 cis cis2 b4 a gis4 fis e e' e d8 cis d4 fis e d cis b a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 324.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a1 gis fis e d cis b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a8 b cis4 a b2 e e4 d8 [cis] d [cis] b [a] gis2 r4 e fis4 fis8 e fis4 gis a8 [b] cis [d] e4 a, a2 gis a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 325.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key a \major
+      \relative c' {
+        a1. b cis d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        r2 a4 b cis a a2 gis4 fis gis b b2 a4 gis a cis cis2 b4 a b d d2 cis e e2 d4 e d cis b2 e4 d cis b a1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 72
+\subsection{No. 326.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key a \major
+      \relative c'' {
+        a1. gis fis e d cis b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        r2 a4 b cis d e1 e2 e d4 cis d2 d cis4 b cis2 cis2 b4 a b2 b a a a gis4 fis gis2 a1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 327.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key a \major
+      \relative c' {
+        a2. b cis d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a4 cis a a gis8 fis gis4 a e' cis cis b a gis fis gis a8 b cis4 d b4. cis8 b4 a2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 328.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key a \major
+      \relative c'' {
+        a2. gis fis e d cis b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a4 a8 [b] cis [a] b4 b8 [a] b [cis] d4 d8 [cis] b [a] gis2 e4 fis4 gis8 [a] b [gis] a4 e a a gis8 fis gis4 a2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 329.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key a \major
+      \relative c' {
+        a4. b cis d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        r8 a a a gis fis e cis' cis cis b a gis e' e e d cis b cis b a4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 330.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/8
+      \key a \major
+      \relative c'' {
+        a4. gis fis e d cis b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        r8 a a b4 cis8 d e d d4 cis8 cis b b b a a gis fis gis a4.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 73
+\subsection{No. 331.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c' {
+        a1 b cis d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a cis a gis gis8 [fis] gis [a] b [gis] a4 a8 [gis] a [b] a [gis] fis4 gis8 a b4 a gis fis e cis d fis a d b cis8 [d] e [d] cis [b] a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 332.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a1 gis fis e d cis b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a cis a b b8 a b4 cis d fis,8 gis a4 b cis d e cis ~ cis b8 a b4 b ~ b a8 gis a4 a a2 gis a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 333.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c' {
+        a1 b cis d e fis gis a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 a cis a d2 b4 gis a e a gis fis2 b4 a gis2 e e4 d8 cis d4 fis ~ fis e8 d cis4 b a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 74
+\subsection{No. 334.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a1 gis fis e d cis b a \bar "||"
+      }
+    }
+    \new Staff {
+      \key a \major
+      \relative c'' {
+        a4 b cis d e e, e' e ~ e d8 cis d4 d ~ d cis8 b cis4 cis ~ cis b8 a gis4 fis8 gis a4 gis8 fis e4 a a2 gis a1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+\section{F\sharp Minor}
+\subsection{No. 335.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key fis \minor
+      \relative c' {
+        fis1. gis a b cis dis eis fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        fis2 a fis eis gis eis fis a fis gis b gis a cis a fis b a gis cis4 b a gis fis1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 336.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key fis \minor
+      \relative c'' {
+        fis1. e d cis b a gis fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        r2 fis4 gis a b cis2 b a b a gis a1 fis2 gis4 a b cis dis eis fis2 cis fis, fis1 eis2 fis1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 75
+\subsection{No. 337.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key fis \minor
+      \relative c' {
+        fis4. ~ fis gis ~ gis a ~ a b ~ b cis ~ cis dis ~ dis eis ~ eis fis ~ fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        r8 fis gis a gis fis eis4 fis8 gis4 eis8 fis4 gis8 a gis fis gis4. b a cis cis4 cis8 b4 a8 gis cis b a4 gis8 fis4. ~ fis
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 338.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key fis \minor
+      \relative c'' {
+        fis4. ~ fis e ~ e d ~ d cis ~ cis b ~ b a ~ a gis ~ gis fis ~ fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        fis4 gis8 a4 b8 cis4. cis, d4 e8 fis4 gis8 a4. fis eis4 dis8 eis fis gis fis4 gis8 a4 fis8 fis4. eis8 dis eis fis4. fis
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 339.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key fis \minor
+      \relative c' {
+        fis\breve gis a b cis dis eis fis \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key fis \minor
+      \relative c' {
+        r2 fis4 gis a2 fis eis2 eis4 fis gis2 eis fis a cis fis d1 b a2 a4 b cis2 a fis2 gis4 a b2 a gis cis cis4 b a gis fis\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 76
+\subsection{No. 340.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key fis \minor
+      \relative c'' {
+        fis\breve e d cis b a gis fis \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key fis \minor
+      \relative c' {
+        r2 fis4 gis a gis a b cis1 cis, d2 d4 cis d e fis gis a2 b cis a d2 d4 e d cis d b cis2 fis fis, fis fis1 eis fis\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 341.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key fis \minor
+      \relative c' {
+        fis2. gis a b cis dis eis fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        fis8 gis a4 fis fis eis8 dis eis4 fis8 gis a4 fis gis fis gis a cis8 [b] a [gis] fis4 b a gis2 a8 gis fis2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 342.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key fis \minor
+      \relative c'' {
+        fis2. e d cis b a gis fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 fis8 [gis] a [b] cis4 cis, e fis8 e fis4 gis a e a a gis gis gis fis fis eis dis eis fis2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 343.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key fis \minor
+      \relative c' {
+        fis1. gis a b cis dis eis fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        r2 fis fis e4 fis e2 d cis fis a a gis b b a4 b a gis fis2 b a gis cis4 b a gis fis1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 77
+\subsection{No. 344.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key fis \minor
+      \relative c'' {
+        fis1. e d cis b a gis fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        fis2 a fis gis4 fis gis2 a b a gis a e fis gis fis gis a cis, fis fis1 eis2 fis1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 345.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        fis1 gis a b cis dis eis fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 fis a fis fis2 eis fis4 gis a fis gis2 b b a4 gis fis2 b4 a gis2 a4 gis fis1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 346.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key fis \minor
+      \relative c'' {
+        fis1 e d cis b a gis fis \bar "||"
+      }
+    }
+    \new Staff {
+      \key fis \minor
+      \relative c' {
+        r2 fis gis e fis4 e fis gis a2 cis d4 cis d b cis b a fis fis2 eis fis1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+
+\section{E Major.}
+\subsection{No. 347.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e1 fis gis a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        r2 e dis4 cis b dis e fis gis e fis gis a fis gis a b gis a gis fis e b' a gis fis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 348.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c'' {
+        e1 dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e4 fis gis a b a b gis a gis fis e dis cis dis b cis dis e fis e fis gis e e2 dis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 78
+\subsection{No. 349.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e1 fis gis a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        r2 e ~ e4 dis8 cis dis4 b e fis e dis cis fis8 e dis4 cis dis e fis gis a a8 gis a4 gis fis gis8 a gis4 fis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 350.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c'' {
+        e1 dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        r2 e fis4 e fis gis a2 a ~ a4 gis fis e dis cis dis fis ~ fis2 e e4 dis cis dis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 351.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c'' {
+        r2 e ~ e dis4 cis b2 e4 dis cis b cis fis dis cis dis b e2 e fis fis e1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e1 fis gis a b cis dis e
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 352.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c'' {
+        e1 dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c'' {
+        r2 gis4 e b'2 b ~ b4 a8 gis a4 a a2 gis ~ gis4 fis8 e fis4 dis e dis cis b a b cis dis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 353.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key e \major
+      \relative c' {
+        e2. fis gis a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e4 dis cis dis cis b e dis e fis gis a gis fis gis a gis a fis gis fis e2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 354.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key e \major
+      \relative c'' {
+        e2. dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e4 gis e fis2 gis4 a gis fis gis2 gis4 fis e dis e b e dis cis dis e2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 79
+\subsection{No. 355.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key e \major
+      \relative c' {
+        e1. fis gis a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        r2 e e e dis cis b e gis gis fis a a gis b b a gis fis gis fis e1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 356.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key e \major
+      \relative c'' {
+        e1. dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        r2 e4 fis gis2 fis b gis a fis e dis1 b2 cis fis dis e b e e1 dis2 e1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 357.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key e \major
+      \relative c' {
+        e4. e fis fis gis gis a a b b cis cis dis dis e ~ e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e4. e8 dis cis dis4 cis8 dis4 fis8 e4 dis8 e fis gis e4 dis8 e4 a8 gis4 fis8 gis4 b8 b a gis a4 gis8 fis gis a gis4 fis8 e4. e
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 358.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key e \major
+      \relative c'' {
+        e4. e dis dis cis cis b b a a gis gis fis fis e ~ e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e8 dis e gis fis e b'4. b b8 a gis a4 a8 a4. gis gis8 fis e fis4 fis8 fis e dis e4 e8 e4. dis8 cis dis e4. ~ e
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 80
+\subsection{No. 359.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key e \major
+      \relative c' {
+        e2. fis gis a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e8 gis b4 e ~ e dis cis b gis e fis2 a4 gis b gis a cis8 [b] a [gis] fis4 b8 [a] gis [fis] e2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 360.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key e \major
+      \relative c'' {
+        e2. dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        \override Staff.Rest #'style = #'classical
+        r4 e e fis8 e fis4 gis a8 gis a4 cis dis2 e4 fis cis dis e8 b gis4 e e2 dis4 e2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 361.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key e \major
+      \relative c' {
+        e\breve fis gis a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key e \major
+      \relative c' {
+        r2 e4 gis b2 e e1 dis2 cis b a gis e fis gis a fis gis a b gis a b cis e b a gis fis e\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 362.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key e \major
+      \relative c'' {
+        e\breve dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key e \major
+      \relative c' {
+        r2 e gis e fis fis4 e fis2 gis a a4 gis a2 cis dis dis4 cis dis2 e fis cis4 b cis2 dis e b gis e a b cis dis e\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 81
+\subsection{No. 363.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key e \major
+      \relative c' {
+        e4. ~ e fis ~ fis gis ~ gis a ~ a b ~ b cis ~ cis dis ~ dis e ~ e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e8 e' dis cis4 b8 a4 gis8 fis4 dis8 e gis b e4 dis8 cis4. a gis8 fis gis b gis e a4. cis b4 a8 gis4 fis8 e4. ~ e
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 364.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key e \major
+      \relative c'' {
+        e4. ~ e dis ~ dis cis ~ cis b ~ b a ~ a gis ~ gis fis ~ fis e ~ e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        r8 e fis gis e gis b4. gis a8 cis, dis e dis e gis4. b cis8 b cis dis cis dis e4 b8 gis4 e8 e4. dis e ~ e
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 365.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e1 fis gis a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e4 fis gis e dis e fis dis e dis e gis fis gis a fis gis a b gis a gis a cis b a gis fis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 366.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c'' {
+        e1 dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e4 fis gis e fis e fis gis a b cis a gis a b gis fis gis a fis e fis gis e e2 dis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 82
+\subsection{No. 367.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e1 fis gis a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e4 gis b e dis e dis cis b a gis e fis gis a fis gis fis gis b a b cis a b a gis fis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 368.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key e \major
+      \relative c'' {
+        e1 dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        e4 fis gis a b cis dis b e dis cis e dis cis b dis cis b a cis b a gis b a b cis dis e1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 369.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key e \major
+      \relative c' {
+        e1. fis gis a b cis dis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        r2 e e' e dis4 e dis cis b2 gis e fis1 a2 gis4 a b2 gis a4 b cis2 a fis b4 a gis fis e1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 370.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key e \major
+      \relative c'' {
+        e1. dis cis b a gis fis e \bar "||"
+      }
+    }
+    \new Staff {
+      \key e \major
+      \relative c' {
+        r2 e4 fis gis a b2 fis gis a4 b cis2 e ~ e dis b cis4 b cis2 dis e b e e dis4 cis dis2 e1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 83
+\section{C\sharp Minor.}
+\subsection{No. 371.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key cis \minor
+      \relative c'' {
+        r2 cis cis b4 a gis2 cis dis4 e dis cis bis2 cis4 dis cis dis e2 dis e4 dis cis1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c' {
+        cis1 dis e fis gis ais bis cis
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 372.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key cis \minor
+      \relative c'' {
+        cis1 b a gis fis e dis cis \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c' {
+        cis4 dis e cis dis cis dis e fis e fis dis e2 cis dis cis4 bis cis dis e cis cis2 bis cis1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 373.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key cis \minor
+      \relative c' {
+        cis1 dis e fis gis ais bis cis \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c' {
+        r2 cis cis bis4 dis dis2 cis4 e e2 dis4 fis fis2 e dis cis gis'4 fis e dis cis1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 374.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key cis \minor
+      \relative c'' {
+        cis4 dis e cis dis2 b cis4 b cis dis e dis e b a gis a b cis dis e cis cis2 bis cis1 \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c'' {
+        cis1 b a gis fis e dis cis
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 375.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key cis \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 cis cis cis4 bis8 ais bis4 cis8 b cis4 e e dis cis bis cis dis cis dis e dis e dis cis2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c' {
+        cis2. dis e fis gis ais bis cis
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 376.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key cis \minor
+      \relative c'' {
+        cis4 e cis dis8 cis dis4 b cis8 b cis4 dis e8 dis e4 b a8 gis a4 b cis8 dis e4 cis cis bis8 ais bis4 cis2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c'' {
+        cis2. b a gis fis e dis cis
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 84
+\subsection{No. 377.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key cis \minor
+      \relative c' {
+        cis4 e gis2 cis b1 a2 gis4 a b2 e e dis cis bis ais bis cis fis e dis1 dis2 cis1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c' {
+        cis1. dis e fis gis ais bis cis
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 378.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key cis \minor
+      \relative c'' {
+        cis2 e e e dis e fis cis dis e b gis a4 b cis2 dis e gis, cis cis bis4 ais bis2 cis1. \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c'' {
+        cis1. b a gis fis e dis cis
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 379.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key cis \minor
+      \relative c'' {
+        cis8 dis e4 cis cis bis8 ais bis4 cis gis e' e dis cis bis dis gis, cis dis e dis2 dis4 cis2. \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c' {
+        cis2. dis e fis gis ais bis cis
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 380.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key cis \minor
+      \relative c'' {
+        cis2. b a gis fis e dis cis \bar "||"
+      }
+    }
+    \new Staff {
+      \key cis \minor
+      \relative c' {
+        cis8 [dis] e [dis] e [fis] gis4 fis e dis8 [cis] dis [e] fis [dis] e4 dis cis bis cis dis e cis cis cis bis bis cis2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 85
+\section{B Major.}
+\subsection{No. 381.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \major
+      \relative c' {
+        b1 cis dis e fis gis ais b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c'' {
+        b4 cis dis b ais b cis ais b cis b ais gis fis gis cis ais gis ais dis b ais b gis fis e dis cis b1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 382.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \major
+      \relative c'' {
+        b1 ais gis fis e dis cis b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c' {
+        b4 cis dis e fis gis ais cis b ais b cis dis cis b ais gis fis gis ais b ais b fis e fis gis ais b1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 383.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key b \major
+      \relative c' {
+        b2. cis dis e fis gis ais b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c'' {
+        b4 cis b ais cis ais b fis b gis cis b ais dis cis b e dis cis dis cis b2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 384.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key b \major
+      \relative c'' {
+        b2. ais gis fis e dis cis b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c' {
+        b4 dis e fis gis ais b ais b dis cis dis e gis, ais b fis b b ais8 gis ais4 b2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 385.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key b \major
+      \relative c' {
+        b1. cis dis e fis gis ais b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c' {
+        r2 b b' ~ b ais4 gis ais2 b2. fis4 b ais gis1 cis4 b ais1 dis4 cis b1 e4 dis cis1 cis2 b1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 386.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/2
+      \key b \major
+      \relative c'' {
+        b1. ais gis fis e dis cis b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c'' {
+        r2 b b cis1 fis,2 b1 gis2 ais1 fis2 gis1 cis2 fis,1 b2 b1 ais2 b1.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 86
+\subsection{No. 387.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key b \major
+      \relative c' {
+        b4. b cis cis dis dis e e fis fis gis gis ais ais b ~ b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c' {
+        r8 b cis dis4 b'8 b4. ais4 gis8 fis gis ais b cis dis dis e dis cis4 b8 ais4 gis8 ais4 fis8 b cis dis e4 dis8 cis fis e dis4 cis8 b4. ~ b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 388.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 6/8
+      \key b \major
+      \relative c'' {
+        b4. ~ b ais ~ ais gis ~ gis fis ~ fis e ~ e dis ~ dis cis ~ cis b ~ b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c' {
+        b4 cis8 dis4 e8 fis4 gis8 ais4 fis8 b cis dis e4 e8 e4. dis cis gis4 ais8 b4. fis4 dis8 e4 fis8 gis4 ais8 b4. ~ b
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 389.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \major
+      \relative c' {
+        b1 cis dis e fis gis ais b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c' {
+        b4 b' b, b' b2 ais4 gis fis2 fis'4 dis cis dis cis b ais2 fis4 gis8 ais b2 gis fis8 [gis] fis [e] dis4 cis b1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Page 87
+\subsection{No. 390.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key b \major
+      \relative c'' {
+        b1 ais gis fis e dis cis b \bar "||"
+      }
+    }
+    \new Staff {
+      \key b \major
+      \relative c'' {
+        b4 b, b' ais8 b cis4 cis8 b cis4 dis e e, e' e e dis8 cis dis4 fis, gis gis8 fis gis4 ais b ais8 gis fis4 b b2 ais b1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 391.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key b \major
+      \relative c' {
+        b\breve cis dis e fis gis ais b \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key b \major
+      \relative c'' {
+        b2 b4 cis dis2 b b ais4 b cis2 ais b dis, fis b gis1 r2 gis ais4 fis gis ais b cis dis fis fis1 e2 dis cis2 fis, fis'4 e dis cis b\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 392.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key b \major
+      \relative c'' {
+        b\breve ais gis fis e dis cis b \bar "||"
+      }
+    }
+    \new Staff {
+\once \override Staff.TimeSignature #'stencil = #ly:text-interface::print
+\once \override Staff.TimeSignature #'text = \markup \musicglyph #"timesig.C22"
+\time 4/2
+      \key b \major
+      \relative c' {
+        b2 cis dis e fis gis ais fis b b4 ais b2 cis dis1 r2 dis cis4 b cis dis e2 cis b4 ais b cis dis2 b e, e4 dis e fis gis ais b\breve
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+
+%Page 88
+\section{G\sharp Minor.}
+\subsection{No. 393.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key gis \minor
+      \relative c'' {
+        gis1 ais b cis dis eis fisis gis \bar "||"
+      }
+    }
+    \new Staff {
+      \key gis \minor
+      \relative c'' {
+        gis4 ais b gis fisis gis ais fisis gis ais b gis ais b cis ais b cis dis b gis2 cis4 b ais dis8 cis b4 ais gis1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 394.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+      \key gis \minor
+      \relative c''' {
+        gis1 fis e dis cis b ais gis \bar "||"
+      }
+    }
+    \new Staff {
+      \key gis \minor
+      \relative c'' {
+        gis4 ais b cis dis cis dis b gis fis gis ais b cis dis b ais gis fisis ais gis ais b gis gis2 fisis gis1
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 395.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key gis \minor
+      \relative c'' {
+        gis2. ais b cis dis eis fisis gis \bar "||"
+      }
+    }
+    \new Staff {
+      \key gis \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 gis8 [ais] b [gis] fisis gis ais4 fisis gis8 ais b4 gis ais cis ais b dis b gis cis b ais2 ais4 gis2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+\subsection{No. 396.}
+
+\begin{lilypond}
+\score {
+  <<
+    \new Staff {
+    \time 3/4
+      \key gis \minor
+      \relative c''' {
+        gis2. fis e dis cis b ais gis \bar "||"
+      }
+    }
+    \new Staff {
+      \key gis \minor
+      \relative c'' {
+        \override Staff.Rest #'style = #'classical
+        r4 gis8 [ais] b [cis] dis2 dis,4 gis e8 [fis] gis [ais] b2 b4 ais8 [gis] fisis [gis] ais [fisis] gis [ais] b4 gis gis fisis8 eis fisis4 gis2.
+      }
+    }
+  >>
+  \layout {
+  }
+  \midi {
+  }
+}
+\end{lilypond}
+
+
+%Proofreading progress: No. 388
 
 \end{document}
