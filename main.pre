@@ -212,7 +212,7 @@
 %Page 27
 \exercise{129}{}{c''}{d1 c bes a g f e d}{c'}{d4 e f g a2 r bes4 c d e f2 r e4 d cis e d a d2 d cis d1}
 
-\section{B\flat Major.}
+\section{B$\flat $ Major.}
 \key{bes \major}
 \exercise{130}{}{c''}{r2 bes a c bes a g c4 bes a f g a bes c d ees c2. c4 bes1}{c'}{bes1 c d ees f g a bes}
 \exercise{131}{}{c''}{r2 bes c a bes g a bes c a bes c4 d ees2 c d1}{c''}{bes1 a g f ees d c bes}
@@ -266,7 +266,7 @@
 \exercise{162}{3/4}{c''}{g2. a bes c d e fis g}{c''}{r4 g g g fis8 e fis4 g2 bes4 ~ bes a g fis2 d'4 d c bes a d8 c bes a g2.}
 \exercise{163}{3/4}{c'''}{g2. f ees d c bes a g}{c''}{r4 g g a8 g a4 bes c g a bes f bes bes a fis g d g g2 fis4 g2.}
 
-\section{E\flat Major}
+\section{E$\flat $ Major}
 \key{ees \major}
 \exercise{164}{}{c'}{ees4 g bes ees d ees d c bes2 ees c f4 ees d c d bes ees2 c4 ees f2 f ees1}{c'}{ees1 f g aes bes c d ees}
 \exercise{165}{}{c''}{ees1 d c bes aes g f ees}{c'}{ees4 f g aes bes2. bes4 bes2 aes aes4 g8 f g4 g g2 f f ees ees d ees1}
@@ -312,7 +312,7 @@
 %Page 40
 \exercise{191}{6/8}{c''}{c4. c bes bes aes aes g g f f ees ees d d c ~ c}{c''}{c4 d8 ees4 c8 d4 c8 bes4 g8 c4 bes8 c4 d8 ees4 bes8 ees4. ees8 d c d c b c4 g8 c4. c b c ~ c}
 
-\section{A\flat Major.}
+\section{A$\flat $ Major.}
 \key{aes \major}
 \exercise{192}{}{c''}{r4 aes c aes g aes g f ees aes g aes f bes aes bes g c bes c aes des c des bes ees des ees c1}{c'}{aes1 bes c des ees f g aes}
 \exercise{193}{}{c''}{r4 aes c aes bes aes bes c des c bes aes g f g ees f ees f g aes g aes ees f ees f g aes1}{c''}{aes1 g f ees des c bes aes}
@@ -367,7 +367,7 @@
 
 
 %Page 48
-\section{D\flat Major.}
+\section{D$\flat $ Major.}
 \key{des \major}
 \exercise{225}{}{c'}{des4 f aes des des2 c4 bes aes bes8 c des4 f f2 ees4 des c bes8 aes bes4 c des c des bes aes ges f ees des1}{c'}{des1 ees f ges aes bes c des}
 \exercise{226}{}{c''}{r2 des ees4 des c ees des c bes des c bes aes c bes aes bes c des aes f des ges aes bes c des1}{c''}{des1 c bes aes ges f ees des}
@@ -546,7 +546,7 @@
 %Page 74
 \exercise{334}{}{c''}{a1 gis fis e d cis b a}{c''}{a4 b cis d e e, e' e ~ e d8 cis d4 d ~ d cis8 b cis4 cis ~ cis b8 a gis4 fis8 gis a4 gis8 fis e4 a a2 gis a1}
 
-\section{F\sharp Minor}
+\section{F$\sharp $ Minor}
 \key{fis \minor}
 \exercise{335}{3/2}{c'}{fis1. gis a b cis dis eis fis}{c'}{fis2 a fis eis gis eis fis a fis gis b gis a cis a fis b a gis cis4 b a gis fis1.}
 \exercise{336}{3/2}{c''}{fis1. e d cis b a gis fis}{c'}{r2 fis4 gis a b cis2 b a b a gis a1 fis2 gis4 a b cis dis eis fis2 cis fis, fis1 eis2 fis1.}
@@ -606,7 +606,7 @@
 \exercise{370}{3/2}{c''}{e1. dis cis b a gis fis e}{c'}{r2 e4 fis gis a b2 fis gis a4 b cis2 e ~ e dis b cis4 b cis2 dis e b e e dis4 cis dis2 e1.}
 
 %Page 83
-\section{C\sharp Minor.}
+\section{C$\sharp $ Minor.}
 \key{cis \minor}
 \exercise{371}{}{c''}{r2 cis cis b4 a gis2 cis dis4 e dis cis bis2 cis4 dis cis dis e2 dis e4 dis cis1}{c'}{cis1 dis e fis gis ais bis cis}
 \exercise{372}{}{c''}{cis1 b a gis fis e dis cis}{c'}{cis4 dis e cis dis cis dis e fis e fis dis e2 cis dis cis4 bis cis dis e cis cis2 bis cis1}
@@ -643,7 +643,7 @@
 
 
 %Page 88
-\section{G\sharp Minor.}
+\section{G$\sharp $ Minor.}
 \key{gis \minor}
 \exercise{393}{}{c''}{gis1 ais b cis dis eis fisis gis}{c''}{gis4 ais b gis fisis gis ais fisis gis ais b gis ais b cis ais b cis dis b gis2 cis4 b ais dis8 cis b4 ais gis1}
 \exercise{394}{}{c'''}{gis1 fis e dis cis b ais gis}{c''}{gis4 ais b cis dis cis dis b gis fis gis ais b cis dis b ais gis fisis ais gis ais b gis gis2 fisis gis1}

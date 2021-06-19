@@ -1,12 +1,14 @@
 \documentclass[a4paper]{article}
 \usepackage[cm]{fullpage}
 \usepackage{titlesec}
+\usepackage{libertine}
+\usepackage{titletoc}
+\dottedcontents{section}[1px]{}{3.2em}{2pc}
 
 \setcounter{tocdepth}{1}
 \renewcommand\thesection{}
 \renewcommand\thesubsection{}
-\titleformat{\section}{\normalfont\Huge\scshape\center}{}{1em}{}
-
+\titleformat{\section}{\bfseries\LARGE\scshape\center}{}{1em}{}
 
 \title{396 two part exercises}
 
@@ -15,7 +17,16 @@
 \begin{document}
 
 \maketitle
+
+\begin{center}
+
+\begin{minipage}{8cm}
+
 \tableofcontents
+
+\end{minipage}
+
+\end{center}
 
 \section{C Major.}
 
@@ -3403,7 +3414,7 @@
 \end{lilypond}
 
 
-\section{B\flat Major.}
+\section{B$\flat$ Major.}
 \subsection{No. 130.}
 
 \begin{lilypond}
@@ -4297,7 +4308,7 @@
 \end{lilypond}
 
 
-\section{E\flat Major}
+\section{E$\flat$ Major}
 \subsection{No. 164.}
 
 \begin{lilypond}
@@ -5041,7 +5052,7 @@
 \end{lilypond}
 
 
-\section{A\flat Major.}
+\section{A$\flat$ Major.}
 \subsection{No. 192.}
 
 \begin{lilypond}
@@ -5918,7 +5929,7 @@
 
 
 %Page 48
-\section{D\flat Major.}
+\section{D$\flat$ Major.}
 \subsection{No. 225.}
 
 \begin{lilypond}
@@ -8851,7 +8862,7 @@
 \end{lilypond}
 
 
-\section{F\sharp Minor}
+\section{F$\sharp$ Minor}
 \subsection{No. 335.}
 
 \begin{lilypond}
@@ -9820,7 +9831,7 @@
 
 
 %Page 83
-\section{C\sharp Minor.}
+\section{C$\sharp$ Minor.}
 \subsection{No. 371.}
 
 \begin{lilypond}
@@ -10408,7 +10419,7 @@
 
 
 %Page 88
-\section{G\sharp Minor.}
+\section{G$\sharp$ Minor.}
 \subsection{No. 393.}
 
 \begin{lilypond}

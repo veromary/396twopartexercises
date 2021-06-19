@@ -1,2 +1,0 @@
-@image{df/lily-73bc7853-1}
-@c eof
